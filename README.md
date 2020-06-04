@@ -18,7 +18,6 @@ This is still a work in progress. I'll be improving the installation scripts and
 ## Pre-requisites
 
 * Raspbian OS 10 (Buster)
-* python3-venv
 * USB Gadget Mode enabled on Raspberry Pi
   * Ansible users can configure everything through [ansible-role-key-mime-pi](https://github.com/mtlynch/ansible-role-key-mime-pi)
   * Instructions for non-Ansible users coming soon.
@@ -50,8 +49,6 @@ echo "- hosts: $PI_HOSTNAME
 
 ansible-playbook --inventory "$PI_HOSTNAME", install.yml
 ```
-
-
 
 ## Development Installation
 
