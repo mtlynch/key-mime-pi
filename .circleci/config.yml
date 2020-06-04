@@ -6,9 +6,11 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Create virtual environment
+          command: python3 -m venv venv
+      - run:
           name: Install requirements and run build script
           command: |
-            python3 -m venv venv
             . venv/bin/activate
             pip install --requirement requirements.txt
             pip install --requirement dev_requirements.txt
