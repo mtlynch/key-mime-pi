@@ -8,16 +8,11 @@ jobs:
       - run:
           name: Install requirements and run build script
           command: |
-            mkdir -p ./venv
-            virtualenv --python python3 ./venv
+            python3 -m venv venv
             . venv/bin/activate
             pip install --requirement requirements.txt
             pip install --requirement dev_requirements.txt
             ./build
-      - persist_to_workspace:
-          root: ./
-          paths:
-            - .coverage
 workflows:
   test:
     jobs:
