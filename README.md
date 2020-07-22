@@ -2,6 +2,16 @@
 
 [![CircleCI](https://circleci.com/gh/mtlynch/key-mime-pi.svg?style=svg)](https://circleci.com/gh/mtlynch/key-mime-pi) [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](LICENSE)
 
+## Deprecation
+
+This project is now DEPRECATED. I'll accept pull requests, but I am no longer fixing bugs.
+
+The replacement is a project called [TinyPilot](https://github.com/mtlynch/tinypilot), which offers all the functionality of Key Mime Pi plus:
+
+* Video capture
+* Support for OS- and browser-captured keystrokes (e.g., Ctrl+Alt+Del, Ctrl+W)
+* Better stability
+
 ## Overview
 
 Use your Raspberry Pi as a remote-controlled keyboard that accepts keystrokes through a web browser.
